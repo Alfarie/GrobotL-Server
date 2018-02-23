@@ -4,6 +4,7 @@ var store = require('../store/store');
 
 
 router.get('/timers', (req, res) => {
+    
     let data = store.getters.getTimerList();
     res.json(data);
 });

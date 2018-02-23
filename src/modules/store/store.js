@@ -99,7 +99,7 @@ var checkConnection = setInterval( ()=>{
     if(isConnected){
         setTimeout( ()=>{
             actions.initTimerList();
-        },2000);
+        },5000);
         clearInterval(checkConnection);
     }
 }, 200);
