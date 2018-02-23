@@ -95,14 +95,7 @@ var actions = {
 }
 
 actions.initActivity();
-var checkConnection = setInterval( ()=>{
-    if(isConnected){
-        setTimeout( ()=>{
-            actions.initTimerList();
-        },5000);
-        clearInterval(checkConnection);
-    }
-}, 200);
+
 
 module.exports = {
     state: state,

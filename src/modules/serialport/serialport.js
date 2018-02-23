@@ -27,6 +27,7 @@ var scanPort = function () {
             }));
             port.on('open', (err) => {
                 console.log("[Info] ", str, "is Opened. ")
+                setTimeout( ()=>{isConnected = true;}, 3000);
             })
             port.on('close', (err) => {
                 console.log(err);
@@ -102,7 +103,7 @@ var scanPort = function () {
                 }
             })
             flag = true;
-            isConnected = true;
+            
             break;
         }
     }
@@ -115,6 +116,16 @@ setInterval(() => {
         scanPort();
     }
 }, 5000);
+
+var checkConnection = setInterval( ()=>{
+    if(isConnected){
+        setTimeout( ()=>{
+            port.write('{setting}')
+        },3000);
+        clearInterval(checkConnection);
+    }
+}, 200);
+
 setInterval(() => {
     try {
         if(isConnected){
