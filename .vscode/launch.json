@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Production Scan",
+            "program": "${workspaceFolder}/src/main.js",
+            "args": [
+                "-sp=scan",
+                "-prod",
+                "--loggerTime=60000",
+                "--iface=wlp4s0"
+            ]
+        }
+    ]
+}
+//sudo node src/main.js -sp=/dev/ttyACM0 -prod --iface=wlp4s0 --loggerTime=600000

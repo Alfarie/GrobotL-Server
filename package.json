@@ -13,9 +13,19 @@
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
+    "express-json-csv": "0.0.3",
+    "firebase": "^5.0.4",
+    "getmac": "^1.4.1",
+    "jsonwebtoken": "^8.2.1",
+    "moment": "^2.22.1",
+    "node-where": "^1.1.0",
     "path": "^0.12.7",
+    "public-ip": "^2.4.0",
     "rxjs": "^5.5.6",
     "serialport": "^6.0.5",
-    "socket.io": "^2.0.4"
+    "socket.io": "^2.0.4",
+    "sqlite3": "^4.0.0",
+    "wireless-tools": "^0.19.0",
+    "xmlhttprequest": "^1.8.0"
   }
 }
